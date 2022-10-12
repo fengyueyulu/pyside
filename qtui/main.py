@@ -6,6 +6,9 @@ import pyqtgraph as pg
 from mainSystem import Ui_Form as main_ui
 from chartWin import Ui_Form as chart_ui
 from systemSetting import Ui_Form as setting_ui
+from home1System import Ui_Form as home1_ui
+from home2System import Ui_Form as home2_ui
+from home3System import Ui_Form as home3_ui
 
 
 class MainWin(QWidget, main_ui):
@@ -25,6 +28,13 @@ class MainWin(QWidget, main_ui):
         self.settingwin = SettingWin()
         self.settingwin.show()
         self.close()
+
+class Home1Win(QWidget,home1_ui):
+    def __init__(self):
+        super(home1_ui, self).__init__()
+        self.setupUi(self)
+        self.search_btn.clicked.connect(self.gotoMain)
+        self.
 
 
 class ChartWin(QWidget, chart_ui):
