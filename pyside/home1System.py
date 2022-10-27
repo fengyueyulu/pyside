@@ -223,4 +223,3 @@ class Ui_Form(object):
         self.home1_label_10.setText(QCoreApplication.translate("Form", u"\u00b5m", None))
         self.home1_label_11.setText(QCoreApplication.translate("Form", u"m\u00b3/g", None))
     # retranslateUi
-
